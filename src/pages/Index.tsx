@@ -2,6 +2,7 @@
 import { Files, FileText, PieChart, Users } from "lucide-react";
 import { UploadZone } from "@/components/UploadZone";
 import { StatsCard } from "@/components/StatsCard";
+import { MedicalMetrics } from "@/components/MedicalMetrics";
 
 const Index = () => {
   return (
@@ -39,6 +40,10 @@ const Index = () => {
             trend={{ value: 2, isPositive: true }}
           />
         </div>
+
+        <section className="animate-slideUp">
+          <MedicalMetrics />
+        </section>
 
         <section className="animate-slideUp">
           <UploadZone />
